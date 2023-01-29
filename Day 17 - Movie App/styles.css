@@ -73,4 +73,35 @@ main {
 
 .movie-info span {
   background-color: var(--primary-color);
+  padding: 0.25rem 0.5rem;
+  border-radius: 3px;
+  font-weight: bold;
+}
+
+.movie-info span.green {
+  color: lightgreen;
+}
+
+.movie-info span.orange {
+  color: orange;
+}
+
+.movie-info span.red {
+  color: red;
+}
+
+.overview {
+  background-color: #fff;
+  padding: 2rem;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  max-width: 100%;
+  transform: translateY(101%);
+  transition: transform 0.4s ease-in;
+}
+
+.movie:hover .overview {
+  transform: translateY(0);
 }
