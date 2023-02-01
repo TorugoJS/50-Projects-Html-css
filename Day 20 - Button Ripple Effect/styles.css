@@ -1,0 +1,28 @@
+@import url("https://fonts.googleapis.com/css?family=Heebo:300&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #000;
+  font-family: "Heebo", sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  overflow: hidden;
+  margin: 0;
+}
+
+button {
+  background-color: purple;
+  color: #fff;
+  border: 1px purple solid;
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  padding: 20px 30px;
+  overflow: hidden;
+  margin: 10px 0;
+}
