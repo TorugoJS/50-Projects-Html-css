@@ -8,14 +8,12 @@ for (const empty of empties) {
   empty.addEventListener("dragover", dragOver);
   empty.addEventListener("dragenter", dragEnter);
   empty.addEventListener("dragleave", dragLeave);
-  empty.addEventListener("dragdrop", dragDrop);
+  empty.addEventListener("drop", dragDrop);
 }
 
 function dragStart() {
-  this.className += "hold";
-  setTimeout(() => {
-    this.className = "invisible";
-  }, 0);
+  this.className += " hold";
+  setTimeout(() => (this.className = "invisible"), 0);
 }
 
 function dragEnd() {
@@ -28,10 +26,11 @@ function dragOver(e) {
 
 function dragEnter(e) {
   e.preventDefault();
+  this.className += " hovered";
 }
 
 function dragLeave() {
-  console.log("drag leave");
+  this.className = "empty";
 }
 
 function dragDrop() {
