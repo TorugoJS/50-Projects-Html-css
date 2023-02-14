@@ -11,7 +11,7 @@ body {
   height: 100vh;
 }
 
-.slide-container {
+.slider-container {
   position: relative;
   overflow: hidden;
   width: 100vw;
