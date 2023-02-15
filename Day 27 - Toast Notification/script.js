@@ -10,9 +10,7 @@ const messages = [
 
 const types = ["info", "success", "error"];
 
-button.addEventListener("click", () =>
-  createNotification("This is invalid data", "success")
-);
+button.addEventListener("click", () => createNotification());
 
 function createNotification(message = null, type = null) {
   const notif = document.createElement("div");
