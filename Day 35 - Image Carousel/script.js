@@ -10,7 +10,6 @@ let interval = setInterval(run, 2000);
 
 function run() {
   idx++;
-
   changeImage();
 }
 
@@ -21,7 +20,7 @@ function changeImage() {
     idx = img.length - 1;
   }
 
-  imgs.style.transform = `translate(${-idx * 500}px)`;
+  imgs.style.transform = `translateX(${-idx * 500}px)`;
 }
 
 function resetInterval() {
@@ -31,14 +30,12 @@ function resetInterval() {
 
 rightBtn.addEventListener("click", () => {
   idx++;
-
   changeImage();
   resetInterval();
 });
 
 leftBtn.addEventListener("click", () => {
   idx--;
-
   changeImage();
   resetInterval();
 });
